@@ -18,7 +18,7 @@ public class EvamOdev {
     String s3 = "Welcome";  
  
 
-    static String str = "code";
+    
      
         Scanner scanner = new Scanner(System.in) ; // Scanner sisteme tanıtıldı.
         String inputStr ; //Kullanıcıdan alıcanak String tanımlandı.
