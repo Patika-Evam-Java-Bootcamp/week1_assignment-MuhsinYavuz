@@ -13,16 +13,16 @@ import java.util.Scanner;
 public class EvamOdev {
  static String str = "code" ;
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in) ;
-        String inputStr ;
-        int size = 5;
+        Scanner scanner = new Scanner(System.in) ; // Scanner sisteme tanıtıldı.
+        String inputStr ; //Kullanıcıdan alıcanak String tanımlandı.
+        int size = 5; // Olusturulacak olan dizi boyutu verildi.
            
         
         
         try {
       
        
-        String[] strs  = new String[size];
+        String[] strs  = new String[size]; // Methot içine girecek olan dizi oluşturuldu.
             System.out.println("Diziye 5 elaman ekleyiniz.");
         
         for(int i = 0 ; i<size ; i++){
@@ -31,30 +31,31 @@ public class EvamOdev {
              inputStr = scanner.nextLine() ;
            
             strs[i] = inputStr  ;
-        }
+        }//dongü ile tüm elemanlara girilen değerler eklendi. Dizi boyutu kadar eleman eklenecek.
             
             
             
         
-        System.out.println(Contents(strs));
-        Contents(strs);
+        System.out.println(Contents(strs)); // Methot içinde dödürülen değeri ekrana yazıcak.
+        
        
         }
         catch(Exception e ){
-            System.out.println(e.getLocalizedMessage());
+            System.out.println(e.getLocalizedMessage()); // HATA olursa hata mesajı bize vericek.
         }
         
    
     
     }
 
- 
+  // String donduren ve içerisinde String[] dizisi alan bir methot olusturuldu. 
     public static String Contents (String[] strs ){
-        String a = ""; 
+     
+        String a = "";  // Eğer verilen stringi 'code' içeriyorsa a ya eklenerek içerilen değeri vericek . 
         for(int i = 0 ; i < strs.length ; i++){
-            if(strs[i].contains(str)){
+            if(strs[i].contains(str)){ // contains ile değeri içerip içermediğine bakıyoruz.
                 if(!a.equals("")){
-                   a = a + "**"+ strs[i] ; 
+                   a = a + "**"+ strs[i] ; //Eğer birden fazla içeriyorsa a ya eklenerek devam eder.
                 }else{
                     a =  strs[i] ; 
                 }
@@ -64,7 +65,7 @@ public class EvamOdev {
           
         }
         
-         return str + " içeren dizi elemanı : " + a ; 
+         return str + " içeren dizi elemanı : " + a ; // İçerilen değeri döndürüyor
         
     }
 }
