@@ -1,6 +1,4 @@
 
-// 1.soruda s1 s2 s3 diye 3 degisken tanimlanmis . String degerinde s1 olustugunda bir obje olusur . s2 , s3 hatta daha fazla 
-// degisken tanimlansa dahi 1 objede kalir . Eger new kelimesiyle olusturursak o zaman baska alanda yer acar . 
 
 package com.mycompany.evamodev;
 
@@ -13,6 +11,15 @@ import java.util.Scanner;
 public class EvamOdev {
  static String str = "code" ;
     public static void main(String[] args) {
+     // 1.soruda s1 s2 s3 diye 3 degisken tanimlanmis . String degerinde s1 olustugunda bir obje olusur . s2 , s3 hatta daha fazla 
+// degisken tanimlansa dahi 1 objede kalir . Eger new kelimesiyle olusturursak o zaman baska alanda yer acar . 
+    String s1 = "Welcome";  
+    String s2 = "Welcome";  
+    String s3 = "Welcome";  
+ 
+
+    static String str = "code";
+     
         Scanner scanner = new Scanner(System.in) ; // Scanner sisteme tanıtıldı.
         String inputStr ; //Kullanıcıdan alıcanak String tanımlandı.
         int size = 5; // Olusturulacak olan dizi boyutu verildi.
