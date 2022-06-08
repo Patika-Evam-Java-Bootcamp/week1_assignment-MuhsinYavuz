@@ -51,13 +51,13 @@ public class EvamOdev {
   // String donduren ve içerisinde String[] dizisi alan bir methot olusturuldu. 
     public static String Contents (String[] strs ){
      
-        String a = "";  // Eğer verilen stringi 'code' içeriyorsa a ya eklenerek içerilen değeri vericek . 
+        String temp = "";  // Eğer verilen stringi 'code' içeriyorsa a ya eklenerek içerilen değeri vericek . 
         for(int i = 0 ; i < strs.length ; i++){
             if(strs[i].contains(str)){ // contains ile değeri içerip içermediğine bakıyoruz.
-                if(!a.equals("")){
-                   a = a + "**"+ strs[i] ; //Eğer birden fazla içeriyorsa a ya eklenerek devam eder.
+                if(!temp.equals("")){
+                   temp = temp + "**"+ strs[i] ; //Eğer birden fazla içeriyorsa a ya eklenerek devam eder.
                 }else{
-                    a =  strs[i] ; 
+                    temp =  strs[i] ; 
                 }
                 
             }
@@ -65,7 +65,7 @@ public class EvamOdev {
           
         }
         
-         return str + " içeren dizi elemanı : " + a ; // İçerilen değeri döndürüyor
+         return str + " içeren dizi elemanı : " + temp ; // İçerilen değeri döndürüyor
         
     }
 }
