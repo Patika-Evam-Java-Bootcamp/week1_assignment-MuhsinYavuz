@@ -26,8 +26,7 @@ public class EvamOdev {
             System.out.println(e.getLocalizedMessage()); // HATA olursa hata mesajı bize vericek.
         }  }        
   // String donduren ve içerisinde String[] dizisi alan bir methot olusturuldu. 
-    public static String Contents (String[] strs ){
-     
+    public static String Contents (String[] strs ){  
         String temp = "";  // Eğer verilen stringi 'code' içeriyorsa a ya eklenerek içerilen değeri vericek . 
         for(int i = 0 ; i < strs.length ; i++){
             if(strs[i].contains(str)){ // contains ile değeri içerip içermediğine bakıyoruz.
@@ -35,7 +34,6 @@ public class EvamOdev {
                    temp = temp + "**"+ strs[i] ; //Eğer birden fazla içeriyorsa a ya eklenerek devam eder.
                 }else{
                     temp =  strs[i] ; 
-                }              
-            }  }                       
+                } } }                                            
          return str + " içeren dizi elemanı : " + temp ; // İçerilen değeri döndürüyor       
     }}
