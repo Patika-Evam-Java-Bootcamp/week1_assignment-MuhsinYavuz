@@ -9,10 +9,12 @@ public class EvamOdev {
     String s2 = "Welcome";  
     String s3 = "Welcome";      
      //ikinci kısım : 
+     
         Scanner scanner = new Scanner(System.in) ; // Scanner sisteme tanıtıldı.
         String inputStr ; //Kullanıcıdan alıcanak String tanımlandı.
-        int size = 5; // Olusturulacak olan dizi boyutu verildi.       
-        try {      
+        int size = 5; // Olusturulacak olan dizi boyutu verildi.  
+     
+        try {          
         String[] strs  = new String[size]; // Methot içine girecek olan dizi oluşturuldu.
             System.out.println("Diziye 5 elaman ekleyiniz.");     
         for(int i = 0 ; i<size ; i++){       
@@ -26,6 +28,7 @@ public class EvamOdev {
             System.out.println(e.getLocalizedMessage()); // HATA olursa hata mesajı bize vericek.
         }  }        
   // String donduren ve içerisinde String[] dizisi alan bir methot olusturuldu. 
+ 
     public static String Contents (String[] strs ){  
         String temp = "";  // Eğer verilen stringi 'code' içeriyorsa a ya eklenerek içerilen değeri vericek . 
         for(int i = 0 ; i < strs.length ; i++){
